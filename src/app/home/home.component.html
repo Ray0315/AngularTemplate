@@ -1,0 +1,19 @@
+<p>
+    home works!
+</p>
+
+<hr>
+
+<ul>
+    <li><a [routerLink]="['/main/home/home1']">home1</a></li>
+    <li><a [routerLink]="['/main/home/home2']">home2</a></li>
+    <li><a [routerLink]="['/main/home/80121/Ray']">home-detail</a></li>
+    <li><a [routerLink]="['/main/home', {outlets: {'route1': ['article1'],'route2': ['article2'] }}]"> Go to Test page </a></li>
+    <li><a [routerLink]="['/second', {outlets: {'route1': ['article1'],'route2': ['article2'] }}]"> Go to articles page </a></li>
+    <li><a [routerLink]="['/login', {outlets: {'route1': ['article1'],'route2': ['article2'] }}]"> Go to Login page </a></li>
+</ul>
+
+<router-outlet></router-outlet>
+<hr>
+<router-outlet name="route1"></router-outlet>
+<router-outlet name="route2"></router-outlet>
