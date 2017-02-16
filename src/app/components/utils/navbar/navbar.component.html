@@ -12,26 +12,26 @@
                 <i class="fa fa-dashboard"></i> <span>Dashboard</span> <i class="fa fa-angle-left pull-right"></i>
             </a>
             <ul class="treeview-menu">
-                <li><a [routerLink]="['/home']"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-                <li><a [routerLink]="['/home']"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+                <li><a [routerLink]="['/main/home/home1']"><i class="fa fa-circle-o"></i>home1</a></li>
+                <li><a [routerLink]="['/main/home/home2']"><i class="fa fa-circle-o"></i>home2</a></li>
+                <li><a [routerLink]="['/main/home/80121/Ray']"><i class="fa fa-circle-o"></i>home-detail</a></li>
+                <li><a [routerLink]="['/main/home', {outlets: {'route1': ['article1'],'route2': ['article2'] }}]"><i class="fa fa-circle-o"></i>Go to Test page</a></li>
+                <li><a [routerLink]="['/second', {outlets: {'route1': ['article1'],'route2': ['article2'] }}]"><i class="fa fa-circle-o"></i>Go to articles page</a></li>
+                <li><a [routerLink]="['/login', {outlets: {'route1': ['article1'],'route2': ['article2'] }}]"><i class="fa fa-circle-o"></i>Go to Login page </a></li>                
             </ul>
         </li>
         <li class="treeview">
             <a href="#">
                 <i class="fa fa-files-o"></i>
-                <span>Layout Options</span>
+                <span>Test Page</span>
                 <span class="label label-primary pull-right">4</span>
             </a>
             <ul class="treeview-menu" style="display: none;">
-                <li><a [routerLink]="['/second']"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
-                <li><a [routerLink]="['/second']"><i class="fa fa-circle-o"></i> Boxed</a></li>
-                <li><a [routerLink]="['/second']"><i class="fa fa-circle-o"></i> Fixed</a></li>
-                <li class=""><a [routerLink]="['/second']"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a>
-                </li>
+                <li><a [routerLink]="['/main/test']"><i class="fa fa-circle-o"></i> Show List</a></li>
             </ul>
         </li>
         <li>
-            <a href="#">
+            <a>
                 <i class="fa fa-th"></i> <span>Widgets</span>
                 <small class="label pull-right label-info">new</small>
             </a>

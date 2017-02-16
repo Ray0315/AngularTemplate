@@ -1,3 +1,4 @@
+import { ShowListComponent } from './../components/pages/show-list/show-list.component';
 import { SlideLayoutComponent } from './../components/layouts/slide-layout/slide-layout.component';
 import { TestLayoutComponent } from './../components/layouts/test-layout/test-layout.component';
 import { Article2Component } from './../second/article2/article2.component';
@@ -30,6 +31,9 @@ export const mainRouting: Routes = [
                     { path: 'article1', component: Article1Component, outlet: 'route1' },
                     { path: 'article2', component: Article2Component, outlet: 'route2' }
                 ]
+            },
+            {
+                path: 'test', component: ShowListComponent
             }
         ]
     },

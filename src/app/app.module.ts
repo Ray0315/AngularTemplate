@@ -22,6 +22,8 @@ import { Article2Component } from './second/article2/article2.component';
 import { CardComponent } from './components/utils/card/card.component';
 import { TestLayoutComponent } from './components/layouts/test-layout/test-layout.component';
 import { SlideLayoutComponent } from './components/layouts/slide-layout/slide-layout.component';
+import { ShowListComponent } from './components/pages/show-list/show-list.component';
+import { ListComponent } from './components/utils/list/list.component';
 
 
 @NgModule({
@@ -40,6 +42,8 @@ import { SlideLayoutComponent } from './components/layouts/slide-layout/slide-la
     CardComponent,
     TestLayoutComponent,
     SlideLayoutComponent,
+    ShowListComponent,
+    ListComponent,
   ],
   imports: [
     BrowserModule,
