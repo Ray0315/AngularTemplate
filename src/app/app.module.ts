@@ -24,6 +24,8 @@ import { TestLayoutComponent } from './components/layouts/test-layout/test-layou
 import { SlideLayoutComponent } from './components/layouts/slide-layout/slide-layout.component';
 import { ShowListComponent } from './components/pages/show-list/show-list.component';
 import { ListComponent } from './components/utils/list/list.component';
+import { TableComponent } from './components/utils/table/table.component';
+import { LoginComponent } from './components/utils/login/login.component';
 
 
 @NgModule({
@@ -44,6 +46,8 @@ import { ListComponent } from './components/utils/list/list.component';
     SlideLayoutComponent,
     ShowListComponent,
     ListComponent,
+    TableComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

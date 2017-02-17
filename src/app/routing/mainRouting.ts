@@ -20,7 +20,7 @@ export const mainRouting: Routes = [
         component: MainLayoutComponent,
         children: [
             {
-                path: '', redirectTo: '/main/home', pathMatch: 'full'
+                path: '', component: HomeComponent
             },
             {
                 path: 'home', component: HomeComponent, children: [

@@ -1,0 +1,33 @@
+<div class="container">
+  <h1>Angular 2 Form Demo</h1>
+  <form #myForm="ngForm">
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input ngModel #myEmail="ngModel" type="email" class="form-control" id="email" name="email" placeholder="Email" 
+      required minlength="5" >
+    </div>
+    <h1>{{myEmail.invalid}}</h1>
+    <div class="errors">
+      <p>請輸入帳號</p>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input ngModel type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+    </div>
+    <div class="errors">
+      <p>請輸入密碼</p>
+    </div>
+    <div class="checkbox">
+      <label>
+      <input ngModel id="remember" name="remember" type="checkbox"> Remember me
+    </label>
+    </div>
+    <button type="submit" class="btn btn-default">Login</button>
+  </form>
+  <hr>
+  <pre>
+     {{ myForm.value | json}}
+  </pre>
+
+  <button type="button" (click)="show(myEmail)">SSS</button>
+</div>
