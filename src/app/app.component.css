@@ -1,4 +1,4 @@
-.grid-container {
+/*.grid-container {
   height: 100vh;
   display: grid;
   grid-template-columns: [line1] 100px [line2] 100px [line3] 0.1fr [line4] 0.9fr [end];
@@ -27,4 +27,4 @@
   background-color: #C57474;
   grid-column: line3 /end;
   grid-row: row-2-start / row-end;
-}
+}*/

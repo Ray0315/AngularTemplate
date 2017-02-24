@@ -7,7 +7,6 @@
 
 .grid-item div {
   display: flex;
-  color: #fff;
   justify-content: center;
   height: 100%;
 }
